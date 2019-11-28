@@ -1,8 +1,7 @@
 Uninstall and reinstall the chrome extension. There has been an update.
+# ❄️ 1.2 Snowwy Hack
 
-
-# ♿ 1.9.0 wheelchair
-Become a cripple, use a wheelchair...
+Become Cold, Become A Snowwy...
 
 ### Chromium Extension
 Remove all exisiting scripts.
