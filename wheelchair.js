@@ -1,19 +1,21 @@
 // ==UserScript==
-// @name         Krunker WheelChair
-// @namespace    https://github.com/hrt
-// @version      1.9.0
-// @description  WheelChair
-// @author       hrt x ttap
-// @match        https://krunker.io/*
+// @name         Snowwys krunker hack aka 𝙎𝙖𝙙 𝘾𝙖𝙡𝙞 ™
+// @namespace    https://www.youtube.com/channel/UCURLLBLaxamLSYBhQsPLlww
+// @version      1.2
+// @description  Snowwys hack yeh you know me big namer aha probs seen me in some fortnut hacking discords.
+// @author       Snowwy or 𝙎𝙖𝙙 𝘾𝙖𝙡𝙞 ™
+// @match        *://krunker.io/*
 // @run-at       document-start
 // @grant        none
+// @require      https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js
+// @require      https://krunkr.com/assets/js/canvas.gui.js?ver=0.6
 // ==/UserScript==
 
 // note:    this script gets injected into its own isolated context/iframe
 //          to console.log we would have to call window.top.console.log
 
-cripple_window(window.parent);
-function cripple_window(_window) {
+Snowwy_window(window.parent);
+function Snowwy_window(_window) {
     if (!_window) {
         return;
     }
@@ -32,7 +34,7 @@ function cripple_window(_window) {
     };
 
     // unique to each user
-    const master_key = 'ttap#4547';
+    const master_key = '𝙎𝙖𝙙 𝘾𝙖𝙡𝙞  ™#5393';
     if (!_window.top[master_key]) {
         // initialise top state
         invisible_define(_window.top, master_key, shared_state);
@@ -416,7 +418,7 @@ function cripple_window(_window) {
                     the script will have the same length as it originally had
                 */
                 if (call_hrt.length + 4 > code_to_overwrite.length) {
-                    throw 'WHEELCHAIR: target function too small ' + [call_hrt.length, code_to_overwrite.length];
+                    throw 'Sad Cali: target function too small ' + [call_hrt.length, code_to_overwrite.length];
                 }
                 let whitespaces = code_to_overwrite.match(/\s/g);
                 for (var i = 0; i < whitespaces && whitespaces.length; i++) {
