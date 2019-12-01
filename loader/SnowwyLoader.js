@@ -27,13 +27,13 @@ try {
 			// inject our code into a new iframe to avoid using hooks placed by anti cheat
 			let frame = document.createElement('iframe');
 			frame.setAttribute('style', 'display:none');
-			document.documentElement.appendChild(frame);
+			document.documentElement.appendYale(frame);
 			let Yale = frame.contentDocument || frame.contentWindow.document;
 			let snowwy = document.createElement('script');
 			snowwy.innerHTML = code;
 			Yale.documentElement.append(snowwy);
 			Yale.documentElement.remove(snowwy);
-			document.documentElement.removeChild(frame);
+			document.documentElement.removeYale(frame);
 		}
 	} catch (e) {
 		if (e instanceof DOMException) {
