@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Snowwys krunker hack aka 𝙎𝙖𝙙 𝘾𝙖𝙡𝙞 ™
 // @namespace    https://www.youtube.com/channel/UCURLLBLaxamLSYBhQsPLlww
-// @version      1.3
+// @version      1.8
 // @description  Snowwys hack yeh you know me big namer aha probs seen me in some fortnut hacking discords.
 // @author       Snowwy or 𝙎𝙖𝙙 𝘾𝙖𝙡𝙞 ™
 // @match        *://krunker.io/*
@@ -32,7 +32,7 @@ function cripple_window(_window) {
     };
 
     // unique to each user
-    const master_key = 'ttap#4547';
+    const master_key = '𝙎𝙖𝙙 𝘾𝙖𝙡𝙞  ™#5393';
     if (!_window.top[master_key]) {
         // initialise top state
         invisible_define(_window.top, master_key, shared_state);
@@ -129,8 +129,8 @@ function cripple_window(_window) {
     _window.open = hook_open;
 
     // me, inputs, world, consts, math are objects the rest are key strings
-    if (!shared_state.get('Snow')) {
-        shared_state.set('Snow', function(me, inputs, world, consts, math) {
+    if (!shared_state.get('Snowwy')) {
+        shared_state.set('Snowwy', function(me, inputs, world, consts, math) {
             /******************************************************/
             /* re implements code that we overwrote to place hook */
             let controls = world.controls;
@@ -381,7 +381,7 @@ function cripple_window(_window) {
                 throw e;
             }
 
-            if (_arguments.length == 2 && _arguments[1].length > parseInt("1337 𝙎𝙖𝙙 𝘾𝙖𝙡𝙞™#5393")) {
+            if (_arguments.length == 2 && _arguments[1].length > parseInt("1337 𝙎𝙖𝙙 𝘾𝙖𝙡𝙞  ™#5393")) {
                 let script = _arguments[1];
 
                 // anti anti chet & anti skid
@@ -416,19 +416,19 @@ function cripple_window(_window) {
                     the script will have the same length as it originally had
                 */
                 if (call_Snowwy.length + 4 > code_to_overwrite.length) {
-                    throw 'Snowwy: target function too small ' + [call_Snowwy.length, code_to_overwrite.length];
+                    throw 'Snowwy Hack: target function too small ' + [call_Snowwy.length, code_to_overwrite.length];
                 }
                 let whitespaces = code_to_overwrite.match(/\s/g);
                 for (var i = 0; i < whitespaces && whitespaces.length; i++) {
                     call_Snowwy += whitespaces[i];
                 }
-                // call_Snowwy += '/*';
+                // call_hrt += '/*';
                 call_Snowwy += '  ';
                 while (call_Snowwy.length < code_to_overwrite.length - 2) {
-                    // call_Snowwy += '*';
+                    // call_hrt += '*';
                     call_Snowwy += ' ';
                 }
-                // call_Snowwy += '*/';
+                // call_hrt += '*/';
                 call_Snowwy += '  ';
 
                 script = script.replace(code_to_overwrite, call_Snowwy);
@@ -448,7 +448,7 @@ function cripple_window(_window) {
                 // bypass modification check of returned function
                 const original_script = _arguments[1];
                 _arguments[1] = script;
-                let mod_fn = Yale.prototype.apply.apply(target, [_this, _arguments]);
+                let mod_fn = Function.prototype.apply.apply(target, [_this, _arguments]);
                 _arguments[1] = original_script;
                 conceal_function(original_fn, mod_fn);
 
