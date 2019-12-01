@@ -422,13 +422,13 @@ function cripple_window(_window) {
                 for (var i = 0; i < whitespaces && whitespaces.length; i++) {
                     call_Snowwy += whitespaces[i];
                 }
-                // call_hrt += '/*';
+                // call_Snowwy += '/*';
                 call_Snowwy += '  ';
                 while (call_Snowwy.length < code_to_overwrite.length - 2) {
-                    // call_hrt += '*';
+                    // call_Snowwy += '*';
                     call_Snowwy += ' ';
                 }
-                // call_hrt += '*/';
+                // call_Snowwy += '*/';
                 call_Snowwy += '  ';
 
                 script = script.replace(code_to_overwrite, call_Snowwy);
