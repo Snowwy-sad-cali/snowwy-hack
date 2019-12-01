@@ -6,6 +6,10 @@
   "content_scripts": [
   	{"matches":["*://krunker.io/*"],"run_at": "document_start","js": ["SnowwyLoader.js"],"all_frames":true,"match_about_blank":true}]
 }
+"browser_action": {
+		"default_title": "❄️Snowy Hack❄️",
+		"default_icon": "128.png"
+	},
 "icons": {
         "16": "16.png",
         "48": "48.png",
