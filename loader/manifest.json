@@ -1,8 +1,13 @@
 {
-  "name": "❄️",
-  "version": "2.0.0",
+  "name": "❄️Snowwy Hack❄️",
+  "version": "1.2",
   "manifest_version": 2,
-  "description": "https://github.com/Snowwy-sad-cali/snowwy-hack",
+  "description": "Snowwys Premium Hack",
   "content_scripts": [
   	{"matches":["*://krunker.io/*"],"run_at": "document_start","js": ["SnowwyLoader.js"],"all_frames":true,"match_about_blank":true}]
 }
+"icons": {
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
+    },
