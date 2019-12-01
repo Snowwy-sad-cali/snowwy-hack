@@ -7,7 +7,7 @@
   	{"matches":["*://krunker.io/*"],"run_at": "document_start","js": ["SnowwyLoader.js"],"all_frames":true,"match_about_blank":true}]
 }
 "browser_action": {
-		"default_title": "❄️Snowy Hack❄️",
+		"default_title": "❄️Snowwy Hack❄️",
 		"default_icon": "128.png"
 	},
 "icons": {
